@@ -14,7 +14,7 @@ from pydantic import BaseModel
 load_dotenv()
 
 DB_FILE = Path(__file__).parent / "chats.json"
-llm = ChatGroq(model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"))
+llm = ChatGroq(model=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"))
 
 app = FastAPI()
 app.add_middleware(

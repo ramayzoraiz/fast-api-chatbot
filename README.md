@@ -21,7 +21,7 @@ uv run uvicorn main:app --reload
 
 The API runs at http://localhost:8000 (interactive docs at `/docs`).
 
-Optional: set `GROQ_MODEL` in `.env` to change the model (default `llama-3.3-70b-versatile`).
+Optional: set `GROQ_MODEL` in `.env` to change the model (default `qwen/qwen3.8-27b`).
 
 ## Run the frontend
 
